@@ -1,0 +1,42 @@
+17:38:33 493 [main] INFO  com.dayone.sample.SampleApplication - Starting SampleApplication using Java 11.0.12 on idahun-ui-MacBookPro-2.local with PID 92222 (/Users/leedahoon/intellij_ultimate workspace/sample/build/classes/java/main started by leedahoon in /Users/leedahoon/intellij_ultimate workspace/sample)
+17:38:33 496 [main] INFO  com.dayone.sample.SampleApplication - No active profile set, falling back to default profiles: default
+17:38:34 422 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+17:38:34 423 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+17:38:34 509 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 81 ms. Found 3 JPA repository interfaces.
+17:38:34 528 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+17:38:34 529 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+17:38:34 541 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dayone.sample.persist.CompanyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+17:38:34 543 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dayone.sample.persist.DividendRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+17:38:34 544 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dayone.sample.persist.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+17:38:34 544 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+17:38:34 903 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4833eff3' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:38:34 907 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:38:35 250 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+17:38:35 259 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:38:35 260 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:38:35 262 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+17:38:35 337 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:38:35 338 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1786 ms
+17:38:35 385 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:38:35 473 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:38:35 478 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dayone'
+17:38:35 702 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+17:38:35 729 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+17:38:35 800 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+17:38:35 852 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+17:38:36 239 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+17:38:36 244 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+17:38:36 804 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+17:38:37 156 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/h2-console/**'] with []
+17:38:37 188 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@68c47cf9, org.springframework.security.web.context.SecurityContextPersistenceFilter@70869678, org.springframework.security.web.header.HeaderWriterFilter@66e434e8, org.springframework.security.web.authentication.logout.LogoutFilter@75b4db22, com.dayone.sample.security.JwtAuthenticationFilter@56193e3a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d94279f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b45c8e4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ecb8b3e, org.springframework.security.web.session.SessionManagementFilter@64f49b3, org.springframework.security.web.access.ExceptionTranslationFilter@18c26588, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@68fa8ea5]
+17:38:38 038 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:38:38 071 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+17:38:38 108 [main] INFO  com.dayone.sample.SampleApplication - Started SampleApplication in 5.203 seconds (JVM running for 5.97)
+17:39:25 402 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:39:25 404 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:39:25 408 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+17:39:35 923 [http-nio-8080-exec-3] INFO  com.dayone.sample.web.AuthController - user login -> Leedahoon
+17:40:02 649 [http-nio-8080-exec-4] INFO  c.d.s.s.JwtAuthenticationFilter - [Leedahoon] -> /company
+17:51:03 317 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+17:51:03 323 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+17:51:03 327 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
